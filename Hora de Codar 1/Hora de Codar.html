@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Codar</title>
+    <script>
+
+        //1) Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e atribua-a um valor "Fusca". Exiba-a ao usuário.
+
+        var nome_do_carro = "fusca"
+
+        alert("O nome do carro escolhido foi: " + nome_do_carro)
+        console.log(nome_do_carro);
+        document.write(nome_do_carro);
+
+        //2) Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".
+
+        var nome = prompt("Digite o seu nome: ");
+
+        alert("Olá " + nome + ", seja bem vindo");
+
+        //3) Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário.
+        //   Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".
+
+        var nome = prompt("Digite o seu nome: ");
+        var idade = prompt("Digite sua idade: ");
+        idade = parseInt(idade);
+
+        alert("Olá " + nome + ", sua idade é: " + idade + " .");
+        document.write("Olá " + nome + ", sua idade é: " + idade + " .");
+
+        //4) Calculando area das figuras planas:
+
+        //Retângulo:
+
+        var base = prompt("Digite a base do retângulo: ");
+        var altura = prompt("Digite a altura do retângulo: ");
+        var area = parseInt(base) * parseInt(altura);
+
+        alert("Com base nas medidas informadas, a area do retângulo é de: " + area + " m²");
+
+        //Quadrado:
+
+        var lado = prompt("Digite o lado do quadrado: ");
+        var area = parseInt(lado) ** 2;
+
+        alert("Com base nas medidas informadas, a area do quadrado é de: " + area + " m²");
+
+        //Losango:
+
+        var diagonal_maior = prompt("Digite o valor da diagonal maior: ");
+        var diagonal_menor = prompt("Digite o valro da diagonal menor: ");
+        var area = parseInt(diagonal_maior) * parseInt(diagonal_menor) / 2;
+
+        alert("Com base nas medidas informadas, a area do losango é de: " + area + " m²");
+
+        //Trapézio
+
+        var base_maior = prompt("Digite o valor da base maior: ");
+        var base_menor = prompt("Digite o valor da base menor: ");
+        var altura_trapezio = prompt("Digite a altura do Trapezio: ");
+        var area = (parseInt(base_maior) + parseInt(base_menor)) * parseInt(altura_trapezio) / 2;
+
+        alert("Com base nas medidas informadas, a area do trapezio é de: " + area + " m²");
+
+        //Paralelogramo
+
+        var base_paralelogramo = prompt("Informe a base do paralelogramo: ");
+        var altura_paralelogramo = prompt("Informe a altura do paralelogramo: ");
+
+        area_aralelogramo = parseInt(base_paralelogramo) * parseInt(altura_paralelogramo);
+
+        alert("Com base nas medidas informadas, a area do paralelogramo é de: " + area + " m²");
+
+        //Triangulo
+
+        var base_triangulo = prompt("Digite o valor da base do triangulo: ");
+        var altura_triangulo = prompt("Digite a altura do triangulo: ");
+        var area = parseInt(base_triangulo) * parseInt(altura_triangulo) / 2;
+
+        alert("Com base nas medidas informadas, a area do triangulo é de: " + area + " m²");
+
+        //Circulo
+
+        var raio = prompt("Informe o raio da circunferência: ");
+        raio = parseInt(raio);
+        area_circulo = 3.14 * raio ** 2;
+
+        var area_formatada = area_circulo.toFixed(2);
+
+        alert("A área do círculo equivale a " + area_formatada + " cm²");
+
+
+        /*5- Para que serve o comando "alert" em Javascript?
+        O comando alert exibe caixas de diálogo de aviso no navegador. Ele é usado para mostrar mensagens rápidas aos usuários e requer a ação deles para fechar a caixa.
+
+        /*6- Para que serve o comando "prompt" em Javascript?
+        O comando prompt mostra uma caixa de entrada no navegador, permitindo que os usuários insiram informações. É útil para obter respostas dos usuários.
+
+        /*7- Para que serve o comando "console.log()" em Javascript?
+        console.log() é usado para exibir mensagens no console do navegador ou ambiente de desenvolvimento. Ajuda os desenvolvedores a entender o fluxo do programa, verificar valores de variáveis e depurar erros.
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
