@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+    <script>
+
+        /*10. Tendo como entrada a altura e o sexo (codificado da seguinte forma:
+        1: feminino 2: masculino) de uma pessoa, construa um programa que calcule
+        e imprima seu peso ideal, utilizando as seguintes fórmulas:
+
+        //para homens: (72.7 * h)-58
+        //para mulheres: (62.1*h)-44.7*/
+
+        var altura = parseFloat(prompt("Digite sua altura: "));
+        var sexo = parseInt(prompt("Digite o seu sexo. (1 para masculino / 2 para feminino): "));
+
+        var pesoIdeal;
+
+        if (sexo === 1) {
+            pesoIdeal = (72.7 * altura) - 58;
+        } else if (sexo === 2) {
+            pesoIdeal = (62.1 * altura) - 44.7;
+        } else {
+            alert("Sexo não reconhecido, por favor digite um valor válido !");
+        }
+
+        if (pesoIdeal !== undefined) {
+            pesoIdeal = pesoIdeal.toFixed(2);
+            alert("Seu peso ideal é aproximadamente " + pesoIdeal + " kg");
+        }
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
