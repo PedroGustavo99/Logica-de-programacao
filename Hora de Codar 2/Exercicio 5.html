@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //5.  Faça um programa que leia 6 valores informados pelo usuário, calcule, exiba os números
+        //    informados e escreva a média aritmética desses valores lidos.*/
+
+        var tamanhoDoVetor = 6;
+        var vetor = [];
+        var soma = 0;
+        var valido = true;
+
+        for (i = 0; i < tamanhoDoVetor; i++) {
+            valor = parseFloat(prompt("Digite um numero: "));
+            vetor.push(valor);
+            soma += valor;
+
+        }
+
+        if (valido) {
+            var media = soma / tamanhoDoVetor;
+
+            alert(vetor);
+            alert(media);
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
