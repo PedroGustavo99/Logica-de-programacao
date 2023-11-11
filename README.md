@@ -1,2 +1,2 @@
 # Logica-de-programacao
-Exercícios focados em Lógica de Programação
+Exercícios focados em Lógica de Programação utilizando JavaScript
