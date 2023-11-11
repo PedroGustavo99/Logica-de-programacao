@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+    <script>
+        /*Vamos criar uma lista de compras.
+
+        Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.
+
+        Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". 
+
+        Peça novamente para o usuário digitar o nome de uma fruta para ser removida. 
+
+        Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado". 
+
+        Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".*/
+
+        var lista_frutas = ["Laranja", "Uva", "Abacaxi", "Melão", "Banana", "Goiaba"];
+        var fruta = "";
+        var index;
+
+        do {
+            fruta = prompt(`As frutas disponiveis são: ${lista_frutas.join(', ')}. Digite alguma das frutas para retira-la da lista !`);
+
+            if (lista_frutas.includes(fruta)) {
+                index = lista_frutas.indexOf(fruta);
+                lista_frutas.splice(index, 1);
+                alert(`A fruta ${fruta} foi retirada da lista`);
+            } else {
+                alert(`Fruta indisponível em nosso mercado`);
+            }
+        } while (lista_frutas.length !== 0);
+
+        alert("Lista de compras finalizada");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
